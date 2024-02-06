@@ -44,7 +44,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-   la_vache_dit:
+  la_vache_dit:
     name: La vache dit
     runs-on: ubuntu-latest
     steps:
