@@ -21,8 +21,21 @@ concurrency:
 
 # Nos jobs !
 jobs:
+  block:
+    name: Bloque le déploiement en cas de problème
+    runs-on: ubuntu-latest
+    steps:
+      - name: Script Bash
+        run: |
+          COMMIT="${{ github.event.head_commit.message }}"
+          REGEXP="^(.+){1}(\([[:alnum:]._-]+\))?(!)?: ([[:alnum:]])+([[:space:][:print:]]*)"
+          if ! [[ $COMMIT =~ $REGEXP ]]; then
+                echo "Le message de commit n'est pas bien formaté"
+                exit 1
+          fi
   deploiement:
     name: Déploiement sur Github Pages
+    needs: block
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
