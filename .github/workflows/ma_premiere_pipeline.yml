@@ -49,6 +49,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Meuh
-        uses: mscoutermarsh/coways-action@master
+        uses: mscoutermarsh/cowsays-action@master
         with:
           text: 'Mon super message'
