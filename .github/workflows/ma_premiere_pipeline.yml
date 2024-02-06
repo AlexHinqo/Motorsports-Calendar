@@ -53,4 +53,4 @@ jobs:
       - name: Installation et exécution
         run : |
           npm i
-          npm run ally
+          npm run a11y
