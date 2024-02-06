@@ -43,3 +43,12 @@ jobs:
       - name: Déploiement vers GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+   deploiement:
+    name: La vache dit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Meuh
+        uses: mscoutermarsh/coways-action@master
+        with:
+          text: 'Mon super message'
