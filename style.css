@@ -105,9 +105,11 @@ form > * {
 footer {
 background-color: #333;
 color: white;
-padding: 10px;
-height: 10%;
+padding: 20px;
+width: 100%;
 display: block;
+position: absolute;
+bottom: 0;
 font-size: 12px;
 text-align: center;
 
