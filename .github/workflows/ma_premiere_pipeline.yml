@@ -44,11 +44,13 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-  la_vache_dit:
-    name: La vache dit
+  accessibilite_numerique:
+    name: Verification de l'accessibilité numérique
     runs-on: ubuntu-latest
     steps:
-      - name: Meuh
-        uses: mscoutermarsh/cowsays-action@master
-        with:
-          text: 'Mon super message'
+      - name: Changement de branche
+        uses: actions/checkout@v4
+      - name: Installation et exécution
+        run : |
+          npm ci
+          npm run ally
