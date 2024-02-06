@@ -1,0 +1,136 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'MADE TOMMY';
+    src: url('fonts/MADETOMMY-Medium.woff2') format('woff2'),
+        url('fonts/MADETOMMY-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MADE TOMMY BOLD';
+    src: url('fonts/MADETOMMY-ExtraBold.woff2') format('woff2'),
+        url('fonts/MADETOMMY-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Mise par defaut des donnees */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+a {
+    text-decoration: underline;
+    color: white;
+}
+
+/*Parametres de la barre de navigation*/
+
+nav {
+    display: flex;
+    background-color: #a1a1a18f;
+    font-family: 'MADE TOMMY';
+    border-bottom: #333 3px solid;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 10px;
+    width: 10%;
+}
+
+.navselected {
+    background-color: #e62a2a;
+}
+
+nav > div:hover {
+    background-color: rgba(255, 0, 0, 0.431);
+}
+
+.comingsoon {
+    color: white;
+    text-align: center;
+}
+
+#connexion {
+    margin-left: auto;
+    width: 100px;
+}
+
+img {
+    padding: 15%;
+    width: 100%;
+}
+
+/* Main */
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 700px;
+    overflow-x: auto;
+}
+
+/* Form */
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+legend {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form > * {
+    margin: 2%;
+}
+
+
+/*Footer */
+
+footer {
+background-color: #333;
+color: white;
+padding: 10px;
+height: 10%;
+display: block;
+font-size: 12px;
+text-align: center;
+
+}
+
+footer > p {
+    font-weight: 600;
+}
+
+.coord > ul {
+    list-style-type: none;
+}
+
+
+footer a:hover {
+    text-decoration: underline;
+    color: burlywood;
+}
+
+.hidden {
+    display: none;
+  }
+
+.show {
+    display: block;
+}
