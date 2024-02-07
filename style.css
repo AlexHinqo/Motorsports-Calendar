@@ -24,6 +24,15 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'MADE TOMMY';
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 700px;
+    overflow-x: auto;
+    color: white;
 }
 
 a {
@@ -36,7 +45,6 @@ a {
 nav {
     display: flex;
     background-color: #a1a1a18f;
-    font-family: 'MADE TOMMY';
     border-bottom: #333 3px solid;
 }
 
@@ -73,12 +81,53 @@ img {
 
 /* Main */
 
-body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-width: 700px;
-    overflow-x: auto;
+.parentgridschedule {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    }
+
+    .parentgridschedule > div {
+        width: 20vw;
+        height: 12vw;
+        margin: 20px;
+        text-align: center;
+        border-radius: 25px 25px 25px 25px;
+        -webkit-border-radius: 25px 25px 25px 25px;
+        -moz-border-radius: 25px 25px 25px 25px;
+        border: 5px double #ffffff;
+    }
+    
+    .div1gridschedule { grid-area: 1 / 1 / 2 / 2; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 0px;
+    }
+    .div2gridschedule { grid-area: 1 / 2 / 2 / 3; }
+    .div3gridschedule { grid-area: 1 / 3 / 2 / 4; }
+    .div4gridschedule { grid-area: 1 / 4 / 2 / 5; } 
+
+    .nextschedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.parentgridschedule h1 {
+    font-size: 5vh;
 }
+
+.parentgridschedule h2 {
+    font-size: 100%;
+}
+
+.parentgridschedule h3 {
+    font-size: 100%;
+}
+    
 
 /* Form */
 
