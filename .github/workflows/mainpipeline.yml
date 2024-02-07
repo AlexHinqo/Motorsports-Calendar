@@ -22,7 +22,7 @@ concurrency:
 # Nos jobs !
 jobs:
   accessibilite_numerique:
-    name: Verification de l'accessibilité numérique
+    name: Accessibility verification test
     runs-on: ubuntu-latest
     steps:
       - name: Changement de branche
@@ -33,7 +33,7 @@ jobs:
           npm run a11y
 
   block:
-    name: Bloque le déploiement en cas de problème
+    name: Commit message verification
     runs-on: ubuntu-latest
     steps:
       - name: Script Bash
@@ -45,7 +45,7 @@ jobs:
                 exit 1
           fi
   deploiement:
-    name: Déploiement sur Github Pages
+    name: Deployement
     needs: [block, accessibilite_numerique]
     environment:
       name: github-pages
