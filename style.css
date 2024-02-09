@@ -129,8 +129,8 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 5px 0px;
-        box-shadow: inset 0 0 0 1000px rgba(3, 3, 3, 0.507), 3px 3px 16px 2px #000000;
+        padding: 5px 20px;
+        box-shadow: inset 0 0 0 1000px rgba(3, 3, 3, 0.616), 3px 3px 16px 2px #000000;
         text-shadow: 4px 5px 30px rgb(0, 0, 0);
         background-size: cover;
         background-repeat: no-repeat;
@@ -169,13 +169,25 @@ main {
 
 /* WEC */
 
-#abudhabigp {background-image: url('assets/f1tracks/abudhabi.jpg');}
+#wecbahrain {background-image: url('assets/wectracks/bahrain.jpg');}
 
-#bahraingp {background-image: url('assets/f1tracks/bahrain.jpg');}
+#wecqatar {background-image: url('assets/wectracks/qatar.jpg');}
 
-#saudigp {background-image: url('assets/f1tracks/saudi-arabia.jpg')}
+#wecitaly {background-image: url('assets/wectracks/italy.jpg')}
 
-#australiagp {background-image: url('assets/f1tracks/australia.jpg');}
+#wecbelgium {background-image: url('assets/wectracks/belgium.jpg');}
+
+
+/* WEC */
+
+#rallymontecarlo {background-image: url('assets/rallytracks/montecarlo.jpg');}
+
+#rallysweden {background-image: url('assets/rallytracks/sweden.jpg');}
+
+#rallykenya {background-image: url('assets/rallytracks/kenya.jpg')}
+
+#rallycroatia {background-image: url('assets/rallytracks/croatia.jpg');}
+
 
 
 /* Formulaire connexion */
@@ -185,6 +197,7 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 2%;
+    height: 80vh;
 }
 
 .connexionform input {
