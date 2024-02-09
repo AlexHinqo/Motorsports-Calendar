@@ -79,12 +79,6 @@ nav > div:hover {
 }
 
 
-
-.navselected:hover {
-    background-color: #e62a2a;
-}
-
-
 .comingsoon {
     color: white;
     text-align: center;
@@ -165,32 +159,42 @@ main {
     
 /* F1 */
 
+#f1abudhabigp {background-image: url('assets/f1tracks/abudhabi.jpg');}
+
+#f1bahraingp {background-image: url('assets/f1tracks/bahrain.jpg');}
+
+#f1saudigp {background-image: url('assets/f1tracks/saudi-arabia.jpg')}
+
+#f1australiagp {background-image: url('assets/f1tracks/australia.jpg');}
+
+/* WEC */
+
+#abudhabigp {background-image: url('assets/f1tracks/abudhabi.jpg');}
+
 #bahraingp {background-image: url('assets/f1tracks/bahrain.jpg');}
 
 #saudigp {background-image: url('assets/f1tracks/saudi-arabia.jpg')}
 
 #australiagp {background-image: url('assets/f1tracks/australia.jpg');}
 
-#japangp {background-image: url('assets/f1tracks/japan.jpg');}
 
+/* Formulaire connexion */
 
-
-/* Form */
-
-form {
+.connexionform {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    border-radius: 2%;
 }
 
-legend {
+.connexionform input {
+    margin: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-form > * {
+.connexionform * {
     margin: 2%;
 }
 
