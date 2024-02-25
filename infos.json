@@ -1,0 +1,64 @@
+{
+    "f1": {
+        "abudhabi": {
+            "gpname": "Abu Dhabi",
+            "gpdate": "24-26 NOV 2023",
+            "gpround": "23",
+            "gpmap": "assets/f1tracks/maps/abudhabi.avif",
+            "gpinfos": {}
+        },
+        "bahrain": {
+            "gpname": "Bahrain",
+            "gpdate": "29-02 FEB-MAR 2024",
+            "gpround": "1",
+            "gpmap": "assets/f1tracks/maps/bahrain.avif",
+            "gpinfos": {}
+        },
+        "saudi": {
+            "gpname": "Saudi",
+            "gpdate": "07-09 MAR 2024",
+            "gpround": "2",
+            "gpmap": "assets/f1tracks/maps/saudi.avif",
+            "gpinfos": {}
+        },
+        "australia": {
+            "gpname": "Australia",
+            "gpdate": "22-24 MAR 2024",
+            "gpround": "3",
+            "gpmap": "assets/f1tracks/maps/australia.avif",
+            "gpinfos": {}
+        }
+
+    },
+    "wec": {
+        "bahrain": {
+            "gpname": "Bahrain",
+            "gpdate": "29-02 FEB-MAR 2024",
+            "gpround": "1",
+            "gpmap": "assets/f1tracks/maps/bahrain.avif",
+            "gpinfos": {}
+        },
+        "qatar": {
+            "gpname": "Bahrain",
+            "gpdate": "29-02 FEB-MAR 2024",
+            "gpround": "1",
+            "gpmap": "assets/f1tracks/maps/bahrain.avif",
+            "gpinfos": {}
+        },
+        "italy": {
+            "gpname": "Bahrain",
+            "gpdate": "29-02 FEB-MAR 2024",
+            "gpround": "1",
+            "gpmap": "assets/f1tracks/maps/bahrain.avif",
+            "gpinfos": {}
+        },
+        "belgium    ": {
+            "gpname": "Bahrain",
+            "gpdate": "29-02 FEB-MAR 2024",
+            "gpround": "1",
+            "gpmap": "assets/f1tracks/maps/bahrain.avif",
+            "gpinfos": {}
+        }
+    }
+}
+
