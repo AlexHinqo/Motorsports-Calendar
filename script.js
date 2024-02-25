@@ -1,6 +1,12 @@
-var ContainerInfos = document.getElementById("ContainerInfos")
-var Choix = document.getElementById("parentgridschedule")
+var ContainerInfos = document.getElementById("ContainerInfos") //Endroit ou afficher les infos
 var Afficher = false;
+
+let data;
+fetch('infos.json')
+    .then(response => response.json())
+    .then(jsonData => {data = jsonData;})
+    .catch(error => console.error('Error fetching JSON:', error));
+
 
 function GenerateInfos(race) {
     var cat = race.substring(0,3);
@@ -10,12 +16,12 @@ function GenerateInfos(race) {
     parentDiv.classList.add("parentinfos");
 
     if (cat == 'fo1') {
-        var childClasses = ["div1gridinfos", "div2gridinfos", "div3gridinfos", "div4gridinfos", "div5gridinfos", "div6gridinfos"];
-        var ids = ["gpname", "gpdate", "gpclose", "gpround", "gpmap", "gpinfos"];
+        var childClasses = ["div1gridinfos", "div2gridinfos", "div4gridinfos", "div5gridinfos", "div6gridinfos"];
+        var ids = ["gpname", "gpdate", "gpround", "gpmap", "gpinfos"];
     }
 
     else if (cat = 'wec') {
-
+        
     }
 
     else if (cat = 'wrc') {
@@ -26,10 +32,11 @@ function GenerateInfos(race) {
         var childDiv = document.createElement("div");
         childDiv.classList.add(childClasses[i]);
         childDiv.id = ids[i];
+        childDiv.innerHTML = data[cat][gp][ids[i]]
         parentDiv.appendChild(childDiv);
 
-    return parentDiv;
     }
+    return parentDiv;
 }
 
 function ShowInfos(race) {
@@ -40,8 +47,13 @@ function ShowInfos(race) {
         ContainerInfos.appendChild(GenerateInfos(race));
     }
     else {
-        ContainerInfos.style.display = "none";
-        Afficher = false;
-        ContainerInfos.innerHTML = ''; // Clear the HTML content
+        CloseInfos();
     }
+}
+
+function CloseInfos() {
+    ContainerInfos.style.display = "none";
+    Afficher = false;
+    ContainerInfos.innerHTML = `<div class="div3gridinfos"> <img src ='assets/close.png' alt ="Fermer l'onglet des informations" onclick="CloseInfos()" role ='button' tabindex='0'> </div>`;
+
 }
