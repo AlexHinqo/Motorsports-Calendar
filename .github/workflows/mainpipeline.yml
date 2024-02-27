@@ -21,15 +21,6 @@ concurrency:
 
 # Nos jobs !
 jobs:
-  chrome-version:
-    name: Chrome-version
-    runs-on: ubuntu-latest
-    steps:
-      - name: Chrome version
-        run : |
-          npm install -g chromedriver@122>
-          axe --chromedriver-path $(npm root -g)/chromedriver/bin/chromedriver <url...>
-
   accessibilite_numerique:
     name: Accessibility verification test
     runs-on: ubuntu-latest
