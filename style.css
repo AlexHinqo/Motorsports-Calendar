@@ -96,8 +96,10 @@ nav img {
 }
 
 main {
-    background-size: 100%;
+    background-size: 100% auto;
     background-repeat: no-repeat;
+    height : auto;
+    overflow: hidden;
 }
 
 /* Main */
@@ -106,7 +108,6 @@ main {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    height: 900px;
     }
     
 #parentgridschedule {
@@ -134,7 +135,7 @@ main {
 
     .div1gridschedule, .div2gridschedule, .div3gridschedule, .div4gridschedule {
         width: 20vw;
-        height: 10vw;
+        height: 20vh;
         margin: 20px;
         display: flex;
         flex-direction: column;
@@ -208,7 +209,7 @@ main {
 
 #ContainerInfos {
     display: none;
-    height: 350px;
+    height: 40vh;
     margin: 10px 200px;
     font-size: 20px;
     color: rgb(255, 255, 255);
