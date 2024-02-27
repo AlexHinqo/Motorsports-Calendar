@@ -46,7 +46,6 @@ jobs:
           fi
   deploiement:
     name: Deployement
-    needs: [block, accessibilite_numerique]
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
