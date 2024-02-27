@@ -52,6 +52,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: setup-chromedriver
+      uses: nanasess/setup-chromedriver@v2.2.2
       # Se place dans le repo
       - name: Changement de repo
         uses: actions/checkout@v4
@@ -67,3 +69,5 @@ jobs:
       - name: Déploiement vers GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+            
