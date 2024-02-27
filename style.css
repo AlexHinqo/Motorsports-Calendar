@@ -243,10 +243,15 @@ main {
 
 
 #closebutton {
-    height: 50px;
+    height: 64px;
     width: auto;
     cursor: pointer;
     float: right;
+    filter: brightness(0%) saturate(0%) invert(100%) 
+}
+
+#closebutton:hover {
+    filter: brightness(100%) saturate(100%) invert(0%) 
 }
 
 /* Formulaire connexion */
