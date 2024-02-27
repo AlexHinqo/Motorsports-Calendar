@@ -2,7 +2,7 @@ var ContainerInfos = document.getElementById("ContainerInfos") //Endroit ou affi
 var Afficher = false;
 
 let data;
-fetch('infos.json')
+fetch('../infos.json')
     .then(response => response.json())
     .then(jsonData => {data = jsonData;})
     .catch(error => console.error('Error fetching JSON:', error));
@@ -17,7 +17,7 @@ function GenerateInfos(race) {
 
     var closebutton = document.createElement("button");
     closebutton.id = "closebutton";
-    closebutton.innerHTML = "<img src ='assets/close.png' id = 'closebutton' alt ='Fermer les informations' onclick='CloseInfos()' role ='button' tabindex='0'>";
+    closebutton.innerHTML = "<img src ='../assets/close.png' id = 'closebutton' alt ='Fermer les informations' onclick='CloseInfos()' role ='button' tabindex='0'>";
 
     var firstrow = document.createElement("div");
     firstrow.classList.add("InfosFirstRow")
@@ -39,7 +39,8 @@ function GenerateInfos(race) {
         firstrow.appendChild(closebutton);
 
         var gpmap = document.createElement("div");
-        gpmap.innerHTML = "<img src='" +  data[cat][gp].gpmap + "' alt = 'Track Layout of " + data[cat][gp].gpname + "'/>";
+        if (cat == 'wrc') {gpmap.innerHTML = "<img src='../" +  data[cat][gp].gpmap + "' alt = 'Country flag of " + data[cat][gp].gpname + "'/>";}
+        else {gpmap.innerHTML = "<img src='../" +  data[cat][gp].gpmap + "' alt = 'Track Layout of " + data[cat][gp].gpname + "'/>";}
         gpmap.id = "gpmap";
 
         var gpinfos = document.createElement("div");
