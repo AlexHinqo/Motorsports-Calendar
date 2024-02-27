@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/icon.png">
     <title>Motorsport Schedules</title>
 </head>
+
 <body>
     <main style="background-image: url(../assets/bglogin.jpg);">
         <nav>
@@ -15,33 +17,35 @@
             <div> <a href="wec.html"> <img src="../assets/logowec.png" alt="logo f1"> </a> </div>
             <div> <a href="wrc.html"> <img src="../assets/logowrc.png" alt="logo wec"> </a> </div>
             <div class="comingsoon">MORE COMING SOON</div>
-            <div id="connexion" class="navselected"> <a href="connexion.html"> <img src="../assets/account.png" alt="Créer un compte/Se connecter"/> </a></div>
+            <div id="connexion" class="navselected"> <a href="connexion.html"> <img src="../assets/account.png"
+                        alt="Créer un compte/Se connecter" /> </a></div>
         </nav>
-
-        <form>
-            <fieldset>
-                <legend>Inscription</legend>
-                    <div> 
-                        <input type="text" name="ID" id="ID" placeholder="Nom utilisateur">
+        <div class="connexionform">
+            <form>
+                <fieldset>
+                    <h1>Inscription</h1>
+                    <div class="input-box">
+                        <input type="text" name="ID" id="ID" placeholder="Nom utilisateur" alt="Nom utilisateur">
                     </div>
-                    <div>
-                        <input type="text" name="mail" id="mail" placeholder="Email">
+                    <div class="input-box">
+                        <input type="text" name="mail" id="mail" placeholder="Email" alt="Email">
                     </div>
-                    <div>
-                        <input type="password" name="mdp" id="mdp" placeholder="Mot de passe">
+                    <div  class="input-box">
+                        <input type="password" name="mdp" id="mdp" placeholder="Mot de passe" alt="Mot de passe">
                     </div>
                     <button type="submit">Créer un compte</button>
                     <button>
-                        <a href="connexion.html" class="button" style="color:black">J'ai un compte</a>
+                        <a href="connexion.html">J'ai un compte</a>
                     </button>
-            </fieldset>
-        </form>
+                </fieldset>
+            </form>
+        </div>
     </main>
 
     <footer>
         <p>Alex Da Costa - Loic Lau</p>
         <br>
-        <div class = "coord"> 
+        <div class="coord">
             <ul>
                 <li> Lycée Turgot </li>
                 <li> 69 Rue Turbigo </li>
@@ -49,7 +53,9 @@
             </ul>
         </div>
         <br>
-        <a href="https://pia.ac-paris.fr/serail/jcms/s2_456818/fr/mentions-legales" target="_blank"> Mentions légales </a>
+        <a href="https://pia.ac-paris.fr/serail/jcms/s2_456818/fr/mentions-legales" target="_blank"> Mentions légales
+        </a>
     </footer>
 </body>
+
 </html>
