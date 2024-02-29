@@ -12,7 +12,7 @@ function GenerateInfos(race) {
     var cat = race.substring(0,3);
     var gp = race.substring(3);
 
-    var parentDiv = document.createElement("div"); //Create parent div
+    var parentDiv = document.createElement("div");
     parentDiv.classList.add("parentinfos");
 
     var closebutton = document.createElement("button");
